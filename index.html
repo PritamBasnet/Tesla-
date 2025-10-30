@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla 3d </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.jpg" width="120px" alt="">
+            <button>MENU</button>
+        </header>
+        <div class="video-wrapper">
+            <video  id="teslaVideo" src="./Videos/whitetoblack.mp4"   muted playsinline>
+            </video>
+            <!-- <video id="teslaVideo" src="./Videos/blacktowhite.mp4"  autoplay  muted playsinline>
+            </video> -->
+        </div>
+        <div style="width: fit-content; margin: auto; ">
+            <img src="./images/carname.webp" width="140px" alt="">
+        </div>
+        <div class="colors-collectors" style="width: fit-content; margin: auto; display: flex; gap: 40px;">
+            <button class="white-btn" style="width: 30px; height: 30px; border-radius: 50%; background-color: white; border: none;"></button>
+            <button class="black-btn" style="width: 30px; height: 30px; border-radius: 50%; background-color: black; border: none;"></button>
+        </div>
+        <div class="image-showerss blackimages">
+            <div>
+                <img src="./images/black 01.png" data-black="./images/black 01.png" alt="">
+            </div>
+            <div>
+                <img src="./images/black 02.png"  alt="">
+            </div>
+            <div>
+                <img src="./images/black 03.png" alt="">
+
+            </div>
+            <div>
+                <img src="./images/black 04.png" alt="">
+
+            </div>
+        </div>
+        <div class="image-showerss whiteimages">
+            <div>
+                <img src="./images/white 01.png" data-black="./images/black 01.png" alt="">
+            </div>
+            <div>
+                <img src="./images/white 02.png"  alt="">
+            </div>
+            <div>
+                <img src="./images/white 03.png" alt="">
+
+            </div>
+            <div>
+                <img src="./images/white 04.png" alt="">
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        let video = document.querySelectorAll(".black-tesla");
+        video.playbackRate = 7; 
+    </script>
+</body>
+
+</html>
